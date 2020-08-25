@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head><title>TED Talk Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheet.css') }}"/>
+  </head>
+
+<body>
+  <div class="hero">
+    <div class="navbar">
+    </div>
+
+  <div class="content">
+    <small>I am a TED Talk Generator</small>
+    <h1>Press play<br>to start watching.</h1>
+          <br>
+    <a href="result" style="text-decoration: none;">Generate</a>
+          <br>
+          <br>
+          <br>
+
+    <small>TITLE: {{ title }} </small>
+</div>
+
+<!-- result
+{{ title }}
+{{ url }}
+{{ category }} -->
+<div class="video-content">
+  <iframe width="700" height="350" src="{{ url }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div class="disclaimer">
+  <small> all rights Ted.com</small>
+</div>
+
+</body>
+</html>
